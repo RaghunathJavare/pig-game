@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  height: 50rem;
+  /* background-color: #232946; */
+  background-image: linear-gradient(to top left, #6a3682 50%, #bf522e 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+/* Game Heading */
+
+.heading {
+  position: absolute;
+  text-shadow: 1px 1px pink;
+  font-size: 4em;
+}
+/* playing box */
+
+#app {
+  position: absolute;
+  top: 10rem;
+  height: 33rem;
+  width: 60rem;
+  backdrop-filter: blur(200px);
+  fill: blur();
+  display: flex;
+  text-align: center;
+  background-color: rgba(219, 172, 172, 0.755);
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.327);
+}
+/* players */
+
+.player-1 {
+  position: relative;
+  height: 33rem;
+  width: 130rem;
+}
+
+.player-2 {
+  position: relative;
+  height: 33rem;
+  width: 130rem;
+}
+.player-playing {
+  background-color: rgb(231, 86, 86);
+  border-right: 3px solid rgb(15, 6, 6);
+  border-right-style: inset;
+  transition: 0.9s;
+}
+/* player winner class */
+.player-winner {
+  background-color: #2f2f2f;
+}
+
+/* 👨‍✈️ player names */
+.players-name {
+  position: relative;
+  display: inline;
+  font-size: 40px;
+  color: #2f2f2f;
+  text-shadow: 1px 1px rgb(239, 203, 203);
+}
+
+.player-first-name {
+  position: relative;
+  color: rgb(12, 1, 18);
+  left: 25px;
+}
+.player-second-name {
+  color: rgb(14, 1, 8);
+  position: relative;
+  left: 25px;
+}
+
+/* ✅ Insert button names */
+.btn-insert {
+  position: relative;
+  top: 7px;
+  right: 20px;
+  background: none;
+  font-family: monospace;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  width: 5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(251, 241, 241);
+  box-shadow: 1px 1px rgb(110, 95, 68);
+}
+
+.btn-insert:hover {
+  background-color: black;
+}
+.btn-insert-first {
+  color: rgb(223, 190, 40);
+}
+.btn-insert-first:hover {
+  border: 1px inset rgb(223, 190, 40);
+}
+.btn-insert-second {
+  color: darkcyan;
+}
+.btn-insert-second:hover {
+  border: 1px inset darkcyan;
+}
+
+/* 💯 players score */
+.score-name {
+  position: relative;
+  top: 30px;
+  font-size: 35px;
+  color: #2f2f2f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px rgb(13, 184, 127);
+}
+
+.score {
+  position: relative;
+  top: 40px;
+  font-size: 100px;
+  color: #2f2f2f;
+}
+
+
+/* player current scores */
+.current {
+  position: relative;
+  left: 60px;
+  top: 4rem;
+  height: 120px;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(231, 133, 133);
+  box-shadow: 2px 2px #2f2f2f;
+}
+.current-label {
+  margin-right: 30px;
+}
+
+/* dice images */
+.dice-img {
+  position: absolute;
+  left: 200px;
+  bottom: 20px;
+  height: 80px;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.btn-hold {
+  position: relative;
+  left: 120px;
+  top: 140px;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 2px black;
+}
+
+.btn-hold:hover {
+  background-color: #2f2f2f;
+  color: white;
+  border: 1px dotted lawngreen;
+}
+/* Play button again 🕹️ */
+
+.again {
+  position: absolute;
+  top: 17rem;
+  height: 40px;
+  width: 7rem;
+  font-size: 20px;
+  border-radius: 1rem;
+  border:none;
+  background-color: lightpink;
+  text-transform:capitalize;
+
+}
+
+.again:hover{
+  background-color:rgb(227, 133, 147);
+}
+

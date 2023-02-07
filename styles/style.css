@@ -70,12 +70,12 @@ body {
 .player-first-name {
   position: relative;
   color: rgb(12, 1, 18);
-  left: 25px;
+  left: 15px;
 }
 .player-second-name {
   color: rgb(14, 1, 8);
   position: relative;
-  left: 25px;
+  left: 15px;
 }
 
 /* ✅ Insert button names */
@@ -128,7 +128,6 @@ body {
   color: #2f2f2f;
 }
 
-
 /* player current scores */
 .current {
   position: relative;
@@ -155,6 +154,7 @@ body {
   left: 200px;
   bottom: 20px;
   height: 80px;
+  cursor: pointer;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
 .btn-hold {
@@ -167,6 +167,7 @@ body {
   border-radius: 5px;
   border: none;
   box-shadow: 1px 2px black;
+  cursor: pointer;
 }
 
 .btn-hold:hover {
@@ -183,13 +184,16 @@ body {
   width: 7rem;
   font-size: 20px;
   border-radius: 1rem;
-  border:none;
+  border: none;
+  cursor: pointer;
   background-color: lightpink;
-  text-transform:capitalize;
-
+  text-transform: capitalize;
 }
 
-.again:hover{
-  background-color:rgb(227, 133, 147);
+.again:hover {
+  background-color: rgb(227, 133, 147);
 }
 
+.hidden {
+  display: none;
+}

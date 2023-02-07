@@ -14,6 +14,8 @@ const current2 = document.getElementById('current--2');
 const btnHold1 = document.getElementById('btn-hold-1');
 const btnHold2 = document.getElementById('btn-hold-2');
 const btnAgain = document.getElementById('btn-again');
+const hiddenEl1 = document.getElementById('btn-1');
+const hiddenEl2 = document.getElementById('btn-2');
 // start to making pig game
 
 // players Names
@@ -24,6 +26,7 @@ btnInFirst.addEventListener('click', function () {
   } else {
     firstName.textContent = insertName;
   }
+  hiddenEl1.classList.add('hidden');
 });
 
 btnInSecond.addEventListener('click', function () {
@@ -33,12 +36,14 @@ btnInSecond.addEventListener('click', function () {
   } else {
     secondName.textContent = insertName;
   }
+  hiddenEl2.classList.add('hidden');
 });
 let playing, playing2, currentScore, currentScore2, scores;
 // score set to zero
 playing = true;
 playing2 = true;
 currentScore = 0;
+currentScore2 = 0;
 score1.textContent = 0;
 score2.textContent = 0;
 scores = [0, 0];
@@ -89,7 +94,6 @@ dice1.addEventListener('click', function () {
 });
 
 // button second 2️⃣
-currentScore2 = 0;
 dice2.addEventListener('click', function () {
   if (playing2) {
     const dice = Math.trunc(Math.random() * 6) + 1;
@@ -171,6 +175,8 @@ const playAgain = function () {
   score2.style.color = '#2f2f2f';
   playing = true;
   playing2 = false;
+  hiddenEl1.classList.remove('hidden');
+  hiddenEl2.classList.remove('hidden');
 };
 
 btnAgain.addEventListener('click', playAgain);

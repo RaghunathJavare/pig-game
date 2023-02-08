@@ -179,4 +179,4 @@ const playAgain = function () {
   hiddenEl2.classList.remove('hidden');
 };
 
-btnAgain.addEventListener('click', playAgain);
+btnAgain.addEventListener('click',playAgain)
